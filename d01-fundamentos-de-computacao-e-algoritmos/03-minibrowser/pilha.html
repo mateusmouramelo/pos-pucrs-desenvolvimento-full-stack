@@ -1,0 +1,28 @@
+<script>
+    console.log('Pilha/Stack')
+
+    class BrowserHistoryStack{
+        constructor(){
+            this.data = [];
+        }
+        push(item){
+            this.data.push(item);
+        }
+        back(){ // Equivalente ao pop()
+            this.data.pop();
+        }
+        print(){
+            console.log(this.data);
+        }
+
+    }
+
+    const history = new BrowserHistoryStack();
+    history.push('https://google.com/');
+    history.push('https://youtube.com/');
+    history.push('https://facebook.com/');
+    history.print();
+    history.back(); // pop
+    history.print();
+
+</script>
