@@ -3,7 +3,7 @@ function avaliaParidade(limiteSuperior){
     if(i%2==1)
       console.log(i+" é um número Ímpar");
     else
-      console.log(i+" é um número PAR");
+      console.log(i+" é um número Par");
   } 
 }  
 
