@@ -8,4 +8,4 @@ const onRead = function onRead (err, buf) {
         console.log(buf.toString())
 }
 
-fs.readFile( '01a_textoQualquer.txt', onRead )
+fs.readFile( './d02-programacao-orientada-a-objetos/code05-async/01a_textoQualquer.txt', onRead )
