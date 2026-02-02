@@ -1,13 +1,13 @@
-2.1. Fundamentos de Computação e Algoritmo
+Este repositório contém algumas das soluções desenvolvidas durante a Pós-Graduação em Desenvolvimento Full-Stack pela PUCRS.
 
+Os arquivos estão organizados por disciplina:
 
-2.2. Programação Orientada a Objetos
+01. Fundamentos de Computação e Algoritmo
 
+02. Programação Orientada a Objetos
 
-2.3. Microsserviços
+03. Microsserviços
 
+04. Programação para Web
 
-2.4. Programação para Web
-
-
-2.5. Web Services
+05. Web Services
