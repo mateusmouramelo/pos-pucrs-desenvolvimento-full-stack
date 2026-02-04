@@ -1,0 +1,14 @@
+{
+  "name": "exemploclientsoapexpress",
+  "version": "1.0.0",
+  "description": "Client local para consumir o web service ExemploServerSOAPExpress, realiza calculos matemáticos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fábio Cavadas",
+  "license": "ISC",
+  "dependencies": {
+    "soap": "^1.0.4"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "exemploclientsoap",
+  "version": "1.0.0",
+  "description": "Client Soap para consumir webservice existente para realizar cálculos matemáticos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fábio Cavadas",
+  "license": "ISC",
+  "dependencies": {
+    "soap": "^1.0.4"
+  }
+}
