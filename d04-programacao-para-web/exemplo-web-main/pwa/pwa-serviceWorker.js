@@ -1,5 +1,5 @@
 const CACHE = 'cache-v1';
-const OFFLINE = 'pwa-offline.html';
+const OFFLINE = 'pwa/pwa-offline.html';
 
 // Ao instalar o service worker, adicionar a página offline ao cache
 self.addEventListener('install', (event) => {

@@ -10,36 +10,47 @@ async function mostraLista() {
 
   const lista = document.createElement('div');
   lista.className = 'lista';
+  
+  try {
+    const response = await fetch('../produtos/produtos.json');
+    const produtos = await response.json();
 
-  const response = await fetch('../produtos/produtos.json');
-  const produtos = await response.json();
-  for (const produto of produtos) {
-    const item = document.createElement('a');
-    item.href = '#';
-    item.className = 'item';
-    item.addEventListener('click', e => {
-      mostraProduto(produto.id);
-      e.preventDefault();
-    });
+    for (const produto of produtos) {
 
-    const img = document.createElement('img');
-    img.src = `../produtos/${produto.imagem}`;
-    img.alt = 'Imagem do produto';
-    item.appendChild(img);
+      const item = document.createElement('a');
+      item.href = '#';
+      item.className = 'item';
+      item.addEventListener('click', e => {
+        mostraProduto(produto.id);
+        e.preventDefault();
+      });
 
-    const nome = document.createElement('div');
-    nome.className = 'nome'
-    nome.innerText = produto.nome
-    item.appendChild(nome);
+      const img = document.createElement('img');
+      img.src = `../produtos/${produto.imagem}`;
+      img.alt = 'Imagem do produto';
+      item.appendChild(img);
 
-    const preco = document.createElement('div');
-    preco.className = 'preco';
-    preco.innerText = REAIS.format(produto.preco);
-    item.appendChild(preco);
+      const nome = document.createElement('div');
+      nome.className = 'nome'
+      nome.innerText = produto.nome
+      item.appendChild(nome);
 
-    lista.appendChild(item);
+      const preco = document.createElement('div');
+      preco.className = 'preco';
+      preco.innerText = REAIS.format(produto.preco);
+      item.appendChild(preco);
+
+      lista.appendChild(item);
+    }
+
+    document.body.appendChild(lista);
+
+  } catch (error) {
+    console.error("Erro na lista:", error);
+    const msg = document.createElement('p');
+    msg.innerText = "Erro ao carregar produtos.";
+    document.body.appendChild(msg);
   }
-  document.body.appendChild(lista);
 }
 
 async function mostraProduto(id) {
