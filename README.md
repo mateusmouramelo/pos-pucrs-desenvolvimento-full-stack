@@ -6,8 +6,10 @@ Os arquivos estão organizados por disciplina:
 
 02. Programação Orientada a Objetos
 
-03. Microsserviços
+03. Bando de Dados Relacional
 
-04. Programação para Web
+04. Microsserviços
 
-05. Web Services
+05. Programação para Web
+
+06. Web Services
