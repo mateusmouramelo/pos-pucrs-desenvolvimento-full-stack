@@ -199,6 +199,7 @@ VALUES (
 SELECT SYSDATE + 1
 FROM DUAL;
 
+-- Parte III
 -- Restrição de Integridade de Entidade
     -- Primary Keys - Chaves Primarias
     -- Alternate Keys - Chaves Candidatas
@@ -312,6 +313,7 @@ CREATE TABLE CONSULTAS  (
     CONSTRAINT PK_CONSULTAS PRIMARY KEY (cod_consulta)
 );
 
+-- parte IV
 -- JOIN
 -- Estados que tem cidade - INNER JOIN
 SELECT EST.uf, EST.nome, CID.uf, CID.nome
